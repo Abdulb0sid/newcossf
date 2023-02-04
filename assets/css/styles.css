@@ -11,7 +11,7 @@
 @keyframes show-hide {
   90% {
       opacity: 1;
-      z-index: 999;
+      z-index: 99999999;
   }
   100% {
       opacity: 0;
@@ -270,7 +270,7 @@ the website, in dark theme
 }  
 
 .main {
-  overflow: hidden;
+  /* overflow: hidden; */
   /*For animation*/
 }  
 
@@ -1191,14 +1191,20 @@ the website, in dark theme
 
 
 
+body{
+  background: #212121;
 
+}
 
 
 
 
 
 .main__product {
-  width: 300px;
+  width: 27%;
+  /* gap: 30px; */
+  transform: scaleY(0.7);
+  /* height: 300px; */
   /* min-height: 100px; */
   display: flex;
   flex-direction: column;
@@ -1207,6 +1213,10 @@ the website, in dark theme
   object-fit: cover;
   scroll-snap-align: center;
   /* border-right: 1px solid #e7e8ec; */
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px #191919,
+  -15px -15px 30px #292929;
 }  
 .main__product:last-of-type {
   border: none;
@@ -1220,10 +1230,11 @@ the website, in dark theme
   user-select: none;
 }  
 .main__product-img {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 50px;
+  object-fit: cover; */
+  border-radius: 30px;
+  transform: scale(0.8);
 }  
 .main__product-title {
   width: 100%;
@@ -1238,7 +1249,7 @@ the website, in dark theme
   top: 0;
   opacity: 1;
   transition: 0.5s;
-  border-radius: 50px;
+  border-radius: 30px;
 
 }  
 .main__product-zoom {
@@ -1276,17 +1287,17 @@ the website, in dark theme
   display: -webkit-box;
 }  
 .main__product-preview {
-  padding: 10px;
-  background: var(--first-color);
+  padding: 10px 0;
+  /* background: var(--first-color); */
   /* background-color: var(--first-color-lighten); */
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
+  /* border-top-right-radius: 50px; */
+  /* border-top-left-radius: 50px; */
 }  
 .main__product-extra {
   display: flex;
   flex-direction: column;
-  background: var(--first-color);
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.274);
+  /* background: var(--first-color); */
+  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.274); */
   padding: 15px;
   user-select: none;
   border-bottom-left-radius: 50px;
@@ -1554,9 +1565,10 @@ the website, in dark theme
 }    
 .chemistry__prodycts{
   display: flex;
+  gap: 30px;
   overflow-x: auto;
   scroll-snap-type:x mandatory;
-  margin: 50px 0    ;
+  /* margin: 50px 0    ; */
 }  
 .view__card{
   background: var(--first-color-dark);
