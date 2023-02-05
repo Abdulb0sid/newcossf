@@ -55,7 +55,10 @@
     } 
     .info__ul{
         gap: 30px;
-    }  
+    } 
+    .receipt.active .receipt__window{
+        transform: translateY(-100px);
+      } 
 }
 @media (max-width: 480px) {
     .receipt__window-btn{
