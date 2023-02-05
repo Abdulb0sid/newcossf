@@ -105,6 +105,9 @@
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
 
+
+  
+
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
@@ -1475,7 +1478,7 @@ body{
   transition: 0.5s;
   top: -100%;
   position: absolute;
-  transform: translateY(-100px);
+  transform: translateY(-170px);
 }  
 .receipt__window-out {
   flex-grow: 1;
@@ -1589,7 +1592,7 @@ body{
 .info__ul{
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 90px;
 }  
 .info__li{
   font-size: 22px;
@@ -1641,7 +1644,87 @@ body{
   transform: translateY(-20px);
   /* justify-content: space-between ; */
   gap: 30px;
-}  
+} 
+
+
+
+
+
+
+.input__block{
+  display: flex;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, grey, grey);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: grey;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+.logo{
+  width: 50px;
+}
+.home__title{
+  font-size: 29px;
+}
 
 
 
