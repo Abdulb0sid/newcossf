@@ -270,7 +270,7 @@ the website, in dark theme
 }  
 
 .main {
-  /* overflow: hidden; */
+  overflow: hidden;
   /*For animation*/
 }  
 
@@ -1498,6 +1498,7 @@ body{
 }  
 .receipt__window-btns {
   padding:10px 15px;
+  /* transform: translateX(-50px); */
   text-transform: uppercase;
   color: #fff;
   background: var(--first-color);
@@ -1637,6 +1638,7 @@ body{
 }  
 .receipt__btns{
   display: flex;
+  transform: translateY(-20px);
   /* justify-content: space-between ; */
   gap: 30px;
 }  
