@@ -172,7 +172,8 @@ textarea {
 
 body {
   margin: var(--header-height) 0 0 0;
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  /* background-color: #635985; */
   color: var(--text-color);
   transition: .4s;
   /*For animation dark mode*/
@@ -199,10 +200,14 @@ a {
   text-decoration: none;
 }  
 
-img {
-  max-width: 100%;
-  height: auto;
-}  
+/* img {
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* height: 100%;
+  margin: 0 auto;
+  display: flex;
+  wi
+}   */ 
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
@@ -407,6 +412,7 @@ the website, in dark theme
 .home__img {
   width: 200px;
   justify-self: center;
+  transform: scale(2.3);
 }  
 
 .home__title {
@@ -1196,6 +1202,7 @@ the website, in dark theme
 
 body{
   background: #212121;
+  /* background: #18122B; */
 
 }
 
@@ -1236,8 +1243,8 @@ body{
   /* width: 100%;
   height: 100%;
   object-fit: cover; */
-  border-radius: 30px;
-  transform: scale(0.8);
+  /* border-radius: 30px; */
+  /* transform: scale(0.8); */
 }  
 .main__product-title {
   width: 100%;
@@ -1579,14 +1586,15 @@ body{
   width: 60%;
   height: 70%;
   border-radius: 50px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
 }  
 .view__card img{
+  transform: scale(0.8);
   max-width: 40%;
   object-fit: cover;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   height: 100%;
 }  
 .info__ul{
@@ -1725,7 +1733,13 @@ body{
 .home__title{
   font-size: 29px;
 }
-
+.main__product-info img{
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  width: 100px;
+  transform: scale(0.8);
+}
 
 
 
