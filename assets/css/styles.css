@@ -1505,6 +1505,7 @@ body{
   border-radius: 6px;
   margin: 10px 0;
   cursor: pointer;
+
 }  
 .receipt__window-btns {
   padding:10px 15px;
@@ -1523,6 +1524,17 @@ body{
   font-size: 25px;
   margin: 10px 0;
 }  
+.receipt__phone::-webkit-inner-spin-button,
+.receipt__phone::-webkit-outer-spin-button{
+ -webkit-appearance: none;
+ margin: 0;
+}
+.tovar,
+.narx{
+  position: absolute;
+  opacity: 0;
+  z-index: -22;
+}
 .view {
   width: 100%;
   height: 100%;
@@ -1659,17 +1671,12 @@ body{
 
 
 
-.input__block{
-  display: flex;
-  margin-bottom: 30px;
-  gap: 30px;
-}
-.form__group {
-  position: relative;
-  padding: 20px 0 0;
-  margin-top: 10px;
-  width: 100%;
-  max-width: 180px;
+.form{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(2, 1fr);
+row-gap: 20px;
+
 }
 
 .form__field {
@@ -1685,43 +1692,12 @@ body{
   transition: border-color 0.2s;
 }
 
-.form__field::placeholder {
-  color: transparent;
+.form__inputs{
+  display: flex;
+  gap: 20px;
+  padding: 15px;
 }
 
-.form__field:placeholder-shown ~ .form__label {
-  font-size: 17px;
-  cursor: text;
-  top: 20px;
-}
-
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #9b9b9b;
-  pointer-events: none;
-}
-
-.form__field:focus {
-  padding-bottom: 6px;
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, grey, grey);
-  border-image-slice: 1;
-}
-
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: grey;
-  font-weight: 700;
-}
 
 /* reset input */
 .form__field:required, .form__field:invalid {

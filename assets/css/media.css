@@ -59,6 +59,12 @@
     .receipt.active .receipt__window{
         transform: translateY(-100px);
       } 
+      .view__card{
+        width: 80%;
+      } 
+      .receipt__btns{
+        justify-content: center;
+      }
 }
 @media (max-width: 480px) {
     .receipt__window-btn{
